@@ -1,5 +1,7 @@
 # WRITE YOUR FUNCTIONS HERE
 
+# PET SHOP FUNCTIONS
+
 def get_pet_shop_name(pet_shop):
     return pet_shop['name']
 
@@ -38,3 +40,8 @@ def remove_pet_by_name(pet_shop, name):
 
 def add_pet_to_stock(pet_shop, new_pet):
     pet_shop['pets'].append(new_pet)
+
+# CUSTOMER FUNCTIONS
+
+def get_customer_cash(customer):
+    return customer['cash']
