@@ -23,19 +23,19 @@ def get_stock_count(pet_shop):
 def get_pets_by_breed(pet_shop, breed):
     pets_of_breed = []
     for pet in pet_shop['pets']:
-        if breed == pet['breed']:
+        if breed.lower() == pet['breed'].lower():
             pets_of_breed.append(pet)
     return pets_of_breed
 
 def find_pet_by_name(pet_shop, name):
     for pet in pet_shop['pets']:
-        if name == pet['name']:
+        if name.lower() == pet['name'].lower():
             return pet
     return None
 
 def remove_pet_by_name(pet_shop, name):
     for pet in pet_shop['pets']:
-        if name == pet['name']:
+        if name.lower() == pet['name'].lower():
             pet_shop['pets'].remove(pet)
 
 def add_pet_to_stock(pet_shop, new_pet):
